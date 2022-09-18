@@ -166,3 +166,7 @@ form input {
   padding-top: 20px;
   text-align: center;
 }
+
+#source {
+  font-size: 8px;
+}
