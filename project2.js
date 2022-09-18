@@ -13,19 +13,14 @@ function dateoftoday() {
     "Saturday"
   ];
   let today = days[now.getDay()];
-  //let date = today + time;
-  //document.getElementById("dayoftoday").innerHTML = today;
   let today2 = today + " " + time + ":" + minutes;
   return today2;
 }
 
-const div = document.querySelector("#dayoftoday");
-div.innerHTML = dateoftoday();
+var dot = document.querySelector("#dayoftoday");
+dot.innerHTML = dateoftoday();
 
-dateoftoday();
-
-//form = #searchbar
-//enter city = #city
+//dateoftoday();
 
 function displayWeatherCondition(response) {
   document.querySelector("#bxl").innerHTML = response.data.name;
@@ -48,16 +43,8 @@ function addCity(event) {
     apiKey +
     "&units=metric";
   axios.get(apiUrl).then(displayWeatherCondition);
-  //event.preventDefault();
-  //const cities = document.querySelector("#bxl");
-  //const search = document.querySelector("#city");
-  //cities.innerHTML = search.value;
-  //make an API call to OpenWeather
-  //once I get the response, I display the city name + temperature
-}
 
-//let changetemp = document.querySelector("#degrees");
-//changetemp.innerHTML = null;
+}
 
 let searchengine = document.querySelector(".searchbar");
 searchengine.addEventListener("submit", addCity);
