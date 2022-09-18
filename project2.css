@@ -1,0 +1,168 @@
+.searchbar {
+  padding: 40px;
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+}
+.button {
+  color: white;
+  box-shadow: 40px grey;
+  width: 100px;
+}
+
+#city {
+  padding: 15px;
+  width: 400px;
+  color: white;
+}
+form input {
+  height: 60px;
+  border-radius: 15px;
+  background: black;
+}
+
+#bgleopard {
+  background-image: url("img2/Backgroundleopard.png");
+  background-size: 800px 600px;
+  background-position: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  padding: 0;
+}
+
+#left {
+  display: inline-block;
+  width: 445px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+#right {
+  display: inline-block;
+  width: 350px;
+  height: 600px;
+  margin: 0;
+  font-size: 0;
+  vertical-align: top;
+}
+
+#mon,
+#monempt,
+#tue,
+#tueempt,
+#wedempt,
+#wed,
+#thurempt,
+#thur,
+#friempt,
+#fri {
+  display: inline-block;
+  height: 118px;
+  width: 173px;
+}
+
+#floor1,
+#floor2,
+#floor3,
+#floor4,
+#floor5 {
+  margin: 0;
+  padding: 0;
+}
+.day {
+  font-size: 15px;
+  text-align: center;
+  height: 30px;
+}
+.icon {
+  font-size: 15px;
+  text-align: center;
+  height: 60px;
+  position: relative;
+  top: 5px;
+  font-size: 30px;
+}
+
+.temp {
+  font-size: 15px;
+  text-align: center;
+  height: 30px;
+}
+
+#mon,
+#tue,
+#wed,
+#thur,
+#fri {
+  background: black;
+  /*opacity: 70%;*/
+  color: white;
+  border-radius: 40px;
+  border: 1px white solid;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#today,
+#details {
+  height: 400px;
+  background: black;
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  border: 1px white solid;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#details {
+  height: 200px;
+}
+
+#bxl {
+  font-size: 70px;
+  color: white;
+}
+
+#dayoftoday,
+#sky,
+#iconoftoday,
+#degrees,
+#humidity,
+#wind {
+  font-size: 30px;
+}
+
+#iconoftoday {
+  padding-top: 20px;
+  position: absolute;
+  font-size: 50px;
+  padding-left: 120px;
+  opacity: 100% !important;
+}
+
+#degrees {
+  position: absolute;
+  padding-top: 80px;
+  padding-left: 100px;
+  font-size: 40px;
+  color: white;
+}
+
+#humidity,
+#wind {
+  position: absolute;
+  padding-top: 20px;
+}
+
+#wind {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#humidity {
+  padding-top: 20px;
+  text-align: center;
+}
