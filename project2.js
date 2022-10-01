@@ -33,8 +33,9 @@ function displayWeatherCondition(response) {
     "Humidity | " + response.data.main.humidity + "%";
   document.querySelector("#wind").innerHTML =
     "Wind | " + Math.round(response.data.wind.speed) + " Km/h";
+    let iconElement = document.querySelector("#icon1");
     document.querySelector("#sky").innerHTML = response.data.weather[0].description;
-
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 function addCity(event) {
