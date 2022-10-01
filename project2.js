@@ -3,6 +3,9 @@ function dateoftoday() {
   let day = now.getDay();
   let time = now.getHours();
   let minutes = String(now.getMinutes()).padStart(2, "0");
+  if (time < 10) {
+    time = `0${time}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -30,6 +33,8 @@ function displayWeatherCondition(response) {
     "Humidity | " + response.data.main.humidity + "%";
   document.querySelector("#wind").innerHTML =
     "Wind | " + Math.round(response.data.wind.speed) + " Km/h";
+    document.querySelector("#sky").innerHTML = response.data.weather[0].description;
+
 }
 
 function addCity(event) {

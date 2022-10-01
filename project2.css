@@ -170,3 +170,7 @@ form input {
 #source {
   font-size: 8px;
 }
+
+#sky {
+  text-transform: capitalize;
+}
